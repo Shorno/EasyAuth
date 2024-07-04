@@ -6,7 +6,7 @@ import {TbBrandOauth} from "react-icons/tb";
 
 export function HeroButtons() {
     return (
-        <div className="m-20 flex flex-col gap-10 justify-center text-center md:flex-row">
+        <div className="m-20 flex flex-col gap-5 md:gap-16 justify-center text-center md:flex-row">
             <HoverBorderGradient
                 containerClassName="rounded-xl w-full md:w-auto"
                 as="button"
