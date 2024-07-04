@@ -1,10 +1,10 @@
 import {BackgroundBeams} from "@/components/ui/background-beams";
-import HeroHighlightText from "@/components/HeroHighlightText";
+import HeroText from "@/components/HeroText";
 
 export default function Home() {
     return (
         <main>
-            <HeroHighlightText/>
+            <HeroText/>
             <BackgroundBeams/>
         </main>
     );
