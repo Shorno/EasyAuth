@@ -24,10 +24,10 @@ export default function HeroText() {
             >
                 <div className="p-4 max-w-7xl  mx-auto relative z-10 w-full pt-20 md:pt-0">
                     <h1 className="text-5xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-                        EasyAuth <br/> <span className={"text-3xl sm:text-7xl"}>the modern way to build</span>
+                        EasyAuth <br/> <span className={"text-2xl sm:text-7xl"}>the modern way to build</span>
                     </h1>
                 </div>
-                <Highlight className="text-2xl md:text-5xl">
+                <Highlight className="text-xl md:text-5xl">
                     fast and secure authentication
                 </Highlight>
             </motion.h1>
