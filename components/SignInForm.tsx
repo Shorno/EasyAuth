@@ -5,11 +5,8 @@ import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
 import GithubSignInButton from "@/components/github-sign-in-button";
 import GoogleSignInButton from "@/components/google-sign-in-button";
-import {auth} from "@/auth";
 
 export async function SignInForm() {
-    const session = await auth();
-    const user = session?.user;
 
 
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
