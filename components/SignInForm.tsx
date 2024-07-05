@@ -5,13 +5,20 @@ import {Label} from "@/components/ui/label";
 import {Input} from "@/components/ui/input";
 import GithubSignInButton from "@/components/github-sign-in-button";
 import GoogleSignInButton from "@/components/google-sign-in-button";
+import {auth} from "@/auth";
 
-export function SignInForm() {
+export async function SignInForm() {
+    const session = await auth();
+    const user = session?.user;
+
+
     const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         console.log("Form submitted");
     };
     return (
+
+
         <div
             className="max-w-sm w-3/4 mx-auto rounded-none md:rounded-2xl p-4 md:p-8 shadow-input bg-white dark:bg-black">
             <h1 className="text-2xl sm:text-3xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
@@ -44,7 +51,8 @@ export function SignInForm() {
                 <GoogleSignInButton/>
             </div>
         </div>
-    );
+    )
+        ;
 }
 
 export const BottomGradient = () => {
