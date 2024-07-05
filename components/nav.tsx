@@ -17,7 +17,7 @@ export default function Nav() {
 
                         <div className={"flex gap-5"}>
                             <li>
-                                Sign Up
+                                <Link href={"/private"}>Private</Link>
                             </li>
                             <li>
                                 Sign In
